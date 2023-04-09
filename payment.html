@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+         #navbar{
+            display: inline-block;
+            height: 10vh;
+            width: 85%;
+            border: 1px solid black;
+            text-align: right;
+            margin-left: 7%;
+            border-radius: 5px;
+            
+        }
+        .navbar-header{
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+            margin: 2%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <div class="navbar-header" id="login"><a href="signIn.html"> Login</a></div>
+        <div class="navbar-header" id="signUp"><a href="signUp.html"> Sign Up</a></div>
+        <div class="navbar-header" id="menu"><a href="menu.html"> Menu</a></div>
+    </div>
+
+
+    <input type="text" id="name" placeholder="Your name here">
+    <input type="number" id="number" placeholder="Your number here">
+    <input type="memo" id="address" placeholder="Your address here">
+    <input type="text" id="message" placeholder="any special message?">
+
+    <button id='btn' onclick="order()">Order Now!</button>
+    
+</body>
+</html>
+
+<script>
+let btn = document.getElementById('btn');
+function order(){
+setTimeout(function() {
+    alert('Your order is accepted')
+},000)
+
+setTimeout(function() {
+    alert('Your order is being cooked')
+},3000)
+
+setTimeout(function() {
+    alert('Your order is ready')
+},8000)
+
+setTimeout(function() {
+    alert('Order out for delivery')
+},10000)
+
+setTimeout(function() {
+    alert('Order delivered')
+},12000)
+}
+
+</script>
